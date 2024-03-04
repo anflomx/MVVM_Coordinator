@@ -6,17 +6,20 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-    var window: UIWindow?
+    var applicationCoordinator: ApplicationCoordinator?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = HomeViewController()
-            self.window = window
+            let applicationCoordinator = ApplicationCoordinator(window: window)
+            applicationCoordinator.start()
+            
+            self.applicationCoordinator = applicationCoordinator
             window.makeKeyAndVisible()
         }
     }

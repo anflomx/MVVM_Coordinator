@@ -15,6 +15,9 @@
 		E1B453312B96597900E824F1 /* MVVMCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B453302B96597900E824F1 /* MVVMCoordinatorTests.swift */; };
 		E1B4533B2B96597900E824F1 /* MVVMCoordinatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4533A2B96597900E824F1 /* MVVMCoordinatorUITests.swift */; };
 		E1B4533D2B96597900E824F1 /* MVVMCoordinatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4533C2B96597900E824F1 /* MVVMCoordinatorUITestsLaunchTests.swift */; };
+		E1B4534A2B965C7400E824F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B453492B965C7400E824F1 /* ContentView.swift */; };
+		E1B4534D2B965DBF00E824F1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4534C2B965DBF00E824F1 /* Coordinator.swift */; };
+		E1B4534F2B965DF100E824F1 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4534E2B965DF100E824F1 /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		E1B453362B96597900E824F1 /* MVVMCoordinatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMCoordinatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B4533A2B96597900E824F1 /* MVVMCoordinatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCoordinatorUITests.swift; sourceTree = "<group>"; };
 		E1B4533C2B96597900E824F1 /* MVVMCoordinatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCoordinatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1B453492B965C7400E824F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1B4534C2B965DBF00E824F1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E1B4534E2B965DF100E824F1 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 			children = (
 				E1B453192B96597400E824F1 /* AppDelegate.swift */,
 				E1B4531B2B96597400E824F1 /* SceneDelegate.swift */,
+				E1B4534E2B965DF100E824F1 /* ApplicationCoordinator.swift */,
+				E1B453492B965C7400E824F1 /* ContentView.swift */,
 				E1B4531D2B96597400E824F1 /* HomeViewController.swift */,
+				E1B4534B2B965DA300E824F1 /* Protocols */,
 				E1B453222B96597800E824F1 /* Assets.xcassets */,
 				E1B453242B96597800E824F1 /* LaunchScreen.storyboard */,
 				E1B453272B96597800E824F1 /* Info.plist */,
@@ -122,6 +131,14 @@
 				E1B4533C2B96597900E824F1 /* MVVMCoordinatorUITestsLaunchTests.swift */,
 			);
 			path = MVVMCoordinatorUITests;
+			sourceTree = "<group>";
+		};
+		E1B4534B2B965DA300E824F1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E1B4534C2B965DBF00E824F1 /* Coordinator.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +273,10 @@
 			files = (
 				E1B4531E2B96597400E824F1 /* HomeViewController.swift in Sources */,
 				E1B4531A2B96597400E824F1 /* AppDelegate.swift in Sources */,
+				E1B4534D2B965DBF00E824F1 /* Coordinator.swift in Sources */,
+				E1B4534A2B965C7400E824F1 /* ContentView.swift in Sources */,
 				E1B4531C2B96597400E824F1 /* SceneDelegate.swift in Sources */,
+				E1B4534F2B965DF100E824F1 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
