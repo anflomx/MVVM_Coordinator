@@ -9,7 +9,12 @@ import Foundation
 import UIKit
 
 class FirstTabCoordinator: Coordinator {
-    var rootViewController = UINavigationController()
+    var rootViewController: UINavigationController
+    
+    init() {
+        rootViewController = UINavigationController()
+        rootViewController.navigationBar.prefersLargeTitles = true
+    }
     
     lazy var firstViewController: FirstViewController = {
         let vc = FirstViewController()
