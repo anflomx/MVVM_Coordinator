@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E19155DA2B97CAFE00205480 /* FirstTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19155D92B97CAFE00205480 /* FirstTabViewModel.swift */; };
 		E1B4531A2B96597400E824F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B453192B96597400E824F1 /* AppDelegate.swift */; };
 		E1B4531C2B96597400E824F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4531B2B96597400E824F1 /* SceneDelegate.swift */; };
 		E1B4531E2B96597400E824F1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4531D2B96597400E824F1 /* HomeViewController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E19155D92B97CAFE00205480 /* FirstTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabViewModel.swift; sourceTree = "<group>"; };
 		E1B453162B96597400E824F1 /* MVVMCoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMCoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B453192B96597400E824F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1B4531B2B96597400E824F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				E1D819282B96F824007D3749 /* FirstTabCoordinator.swift */,
 				E1D8192C2B96F944007D3749 /* FirstViewController.swift */,
 				E1D8192E2B96FA75007D3749 /* FirstDetailView.swift */,
+				E19155D92B97CAFE00205480 /* FirstTabViewModel.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				E1D819292B96F824007D3749 /* FirstTabCoordinator.swift in Sources */,
 				E1D819202B9664BE007D3749 /* OnboardingView.swift in Sources */,
 				E1B4531C2B96597400E824F1 /* SceneDelegate.swift in Sources */,
+				E19155DA2B97CAFE00205480 /* FirstTabViewModel.swift in Sources */,
 				E1D8192F2B96FA75007D3749 /* FirstDetailView.swift in Sources */,
 				E1B4534F2B965DF100E824F1 /* ApplicationCoordinator.swift in Sources */,
 			);
