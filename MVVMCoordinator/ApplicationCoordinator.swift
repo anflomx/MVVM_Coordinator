@@ -18,10 +18,15 @@ class ApplicationCoordinator: Coordinator {
     }
     
     func start() {
-        let onboardingCoordinator = OnboardingCoordinator()
-        onboardingCoordinator.start()
-        self.childCoordinators = [onboardingCoordinator]
-        window.rootViewController = onboardingCoordinator.rootViewController
-        //window.rootViewController = UIHostingController(rootView: ContentView()) //HomeViewController()
+//        let onboardingCoordinator = OnboardingCoordinator()
+//        onboardingCoordinator.start()
+//        self.childCoordinators = [onboardingCoordinator]
+//        window.rootViewController = onboardingCoordinator.rootViewController
+//        //window.rootViewController = UIHostingController(rootView: ContentView()) //HomeViewController()
+        
+        let mainCoordinator = MainCoordinator()
+        mainCoordinator.start()
+        self.childCoordinators = [mainCoordinator]
+        window.rootViewController = mainCoordinator.rootViewController
     }
 }
