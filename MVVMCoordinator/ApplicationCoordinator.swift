@@ -21,7 +21,11 @@ class ApplicationCoordinator: Coordinator {
     }
     
     func start() {
-        hasSeenOnboarding.sink { [weak self] hasSeen in
+        setupOnboardingValue()
+        
+        hasSeenOnboarding
+            .removeDuplicates()
+            .sink { [weak self] hasSeen in
             if hasSeen {
                 let mainCoordinator = MainCoordinator()
                 mainCoordinator.start()
@@ -35,5 +39,17 @@ class ApplicationCoordinator: Coordinator {
                 //window.rootViewController = UIHostingController(rootView: ContentView()) //HomeViewController()
             }
         }.store(in: &subscriptions)
+    }
+    
+    func setupOnboardingValue() {
+        let key = "hasSeenOnboarding"
+        let value = UserDefaults.standard.bool(forKey: key)
+        hasSeenOnboarding.send(value)
+        
+        hasSeenOnboarding
+            .filter({ $0 })
+            .sink { (value) in
+                UserDefaults.standard.setValue(value, forKey: key)
+            }.store(in: &subscriptions)
     }
 }
